@@ -4,7 +4,7 @@ name : testing testing workflow
 # Here is the event. "on" is used to define events. It is used to fire the workflow
 on :
     push:
-        branches: main
+        branches: hello # No branch called "hello" hence Github will not run it
 
 
 # This is a job that will run i.e. waht you wanna automate
