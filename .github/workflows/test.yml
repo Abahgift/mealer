@@ -1,0 +1,20 @@
+# Here is the workflow
+name : testing testing workflow
+
+# Here is the event. "on" is used to define events. It is used to fire the workflow
+on :
+    push:
+        branches: main
+
+
+# This is a job that will run i.e. waht you wanna automate
+jobs:
+    # Your first job, which does one thing: say hello
+    say-hello:
+        # the runner (machine) that will run the job
+        runs-on: ubuntu-latest
+        # What are the steps necessary to achieve this job
+        steps:
+            # Step 1: A name for the steps and what the step is all about: running a command
+            - name: Welcome users!
+              run: echo "Welcome to ci/cd"
