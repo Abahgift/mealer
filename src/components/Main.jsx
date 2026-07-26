@@ -1,4 +1,4 @@
-import Products from "./product";
+import Products from "./Product";
 
 const Main = ({visits, products}) => {
 
